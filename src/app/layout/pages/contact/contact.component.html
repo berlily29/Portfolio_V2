@@ -1,25 +1,31 @@
-<div class="bg-gray-400 h-[85vh] w-100 unlock">
-    <div class="flex">
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" formControlName="name" type="text" class="form-control" required />
+<div class="flex align-center justify-center h-[85vh] w-100">
+
+    <div class="flex h-70 w-100 m-10 rounded-2xl bg-black shadow-xl hover:shadow-2xl ease-in-out duration-300">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="p-20 w-50" style="color: #fff;">
+        <div>
+            <h1 class="text-8xl">Contact Us</h1>
+        </div>
+        <br>
+        <div class="form-group mb-3 input-container">
+          <input id="name" formControlName="name" placeholder="Name" type="text" class="form-control rounded-full h-12 text-2xl input-with-icon" style="background-color: #ffffff; " required />
+          <img src='user.png' class="input-icon">
         </div>
       
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" formControlName="email" type="email" class="form-control" required />
+        <div class="form-group mb-3 input-container">
+          <input id="email" formControlName="email" placeholder="Email" type="email" class="form-control rounded-full h-12 text-2xl input-with-icon" style="background-color: #ffffff; " required />
+          <img src='email.png' class="input-icon">
+
         </div>
       
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" formControlName="message" class="form-control" rows="5" required></textarea>
+        <div class="form-group mb-4">
+          <textarea id="message" formControlName="message" class="form-control rounded-lg text-2xl" placeholder="Message" rows="5" style="background-color: #ffffff;  resize: none;" required></textarea>
         </div>
       
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-light rounded-full w-100 h-16 text-2xl">Send Message</button>
       </form>
-    </div>
+      <div class="flex w-50 h-100">
+            <img src="contact_us_illustration.jpg" class='rounded-br-2xl rounded-tr-2xl w-100 h-100'>
+      </div>
     <div>
         
-    </div>
 </div>

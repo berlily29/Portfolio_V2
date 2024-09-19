@@ -1,0 +1,16 @@
+.input-container {
+    position: relative;
+  }
+
+  .input-with-icon {
+    padding-left: 7%; /* Adjust this value depending on the size of your icon */
+    background-color: #ffffff;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    height: 30px;
+    width: 30px;
+  }

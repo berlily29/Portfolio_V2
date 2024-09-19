@@ -1,11 +1,14 @@
-<div class="flex flex-col min-h-[100vh] w-full bg-gray-100 position-relative ">
+<img src="bg.jpg" style="position: absolute; opacity: .4; height: 100%; width: 100%;">
+
+<div class="flex flex-col min-h-[100vh] w-full position-relative" >
     <div class="h-[10vh]">
       <app-topnavbar></app-topnavbar>
     </div>
-    <div class="min-h-[85vh]">
+    <div class="body min-h-[85vh]" >
       <router-outlet></router-outlet>
     </div>
     <div class="h-[5vh]">
       <app-footer></app-footer>
     </div>
   </div>
+

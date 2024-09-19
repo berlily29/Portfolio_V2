@@ -10,7 +10,7 @@ $text-color-2: #000000;
 $btn-bg-color: #5e3a32;
 $btn-text-color: #ffffff;
 $btn-hover-bg-color: #c79451;
-
+$bg-color: #2c1f0f;
 
 @tailwind base;
 @tailwind components;
@@ -24,11 +24,12 @@ $btn-hover-bg-color: #c79451;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-      
 }
 
-html {
+html,body {
   scroll-behavior: smooth;
+  background-color: $bg-color;
+
 }
 
 .btn {
@@ -40,3 +41,20 @@ html {
 .btn:hover {
     background-color: $btn-hover-bg-color;
 }
+
+.input-container {
+    position: relative;
+  }
+
+  .input-with-icon {
+    padding-left: 7%;
+    background-color: #ffffff;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 2%;
+    top: 20%;
+    height: 30px;
+    width: 30px;
+  }

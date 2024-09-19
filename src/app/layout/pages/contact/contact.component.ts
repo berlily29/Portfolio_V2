@@ -37,21 +37,20 @@ export class ContactComponent {
             imageHeight: 400,
             imageAlt: "LY Logo",
             timer: 1500,
-            background:"#ffffff",
-            color: "#000000",
+            background:"#000000",
+            color: "#ffffff",
             showConfirmButton: false,
           });
         }, (error) => {
           Swal.fire({
             title: "ERROR SENDING MESSAGE!",
-            // text: "Modal with a custom image.",
-            imageUrl: "logo.png",
+            imageUrl: "logo_black.png",
             imageWidth: 400,
             imageHeight: 400,
             imageAlt: "LY Logo",
             timer: 1500,
-            background:"#000000",
-            color: "#ffffff",
+            background:"#ffffff",
+            color: "#000000",
             showConfirmButton: false,
           });
         });
@@ -59,13 +58,13 @@ export class ContactComponent {
       Swal.fire({
         title: "INVALID FIELDS!",
         // text: "Modal with a custom image.",
-        imageUrl: "logo.png",
+        imageUrl: "logo_black.png",
         imageWidth: 400,
         imageHeight: 400,
         imageAlt: "LY Logo",
         timer: 1500,
-        background:"#000000",
-        color: "#ffffff",
+        background:"#ffffff",
+        color: "#000000",
         showConfirmButton: false,
       });
     }
