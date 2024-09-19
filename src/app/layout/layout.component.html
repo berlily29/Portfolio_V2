@@ -1,8 +1,11 @@
-<div class="flex flex-col">
-<app-topnavbar></app-topnavbar>
-
-<router-outlet></router-outlet>
-
-<app-footer></app-footer>
-
-</div>
+<div class="flex flex-col min-h-[100vh] w-full bg-gray-100 position-relative ">
+    <div class="h-[10vh]">
+      <app-topnavbar></app-topnavbar>
+    </div>
+    <div class="min-h-[85vh]">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="h-[5vh]">
+      <app-footer></app-footer>
+    </div>
+  </div>

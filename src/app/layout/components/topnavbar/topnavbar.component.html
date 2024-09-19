@@ -1,3 +1,21 @@
-
-<a routerLink="home">test</a>
-<a routerLink="works">test2</a>
+<nav id="navbar" class=" bg-black h-100 w-100 center" >
+    <ul class="nav nav-pills flex justify-center items-center h-100">
+        <li class="nav-item mx-5">
+            <a class="nav-link" routerLink="home" [class.disabled]="activeLink === 'home'" routerLinkActive="active">home</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link" routerLink="works" [class.disabled]="activeLink === 'works'" routerLinkActive="active">works</a>
+        </li>
+        
+        <li class="nav-item w-[100px] mx-5">
+          <a class="navbar-brand" routerLink="home"  [class.disabled]="activeLink === 'home'" routerLinkActive="active"><img src='logo.png'></a>
+        </li>
+       
+        <li class="nav-item mx-5">
+          <a class="nav-link" routerLink="about" [class.disabled]="activeLink === 'about'" routerLinkActive="active">about</a>
+      </li>
+      <li class="nav-item mx-5">
+        <a class="nav-link" routerLink="contact" [class.disabled]="activeLink === 'contact'" routerLinkActive="active">contacts</a>
+    </li>
+    </ul>
+</nav>

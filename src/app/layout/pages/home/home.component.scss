@@ -1,0 +1,14 @@
+#container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 85vh; /* Full viewport height for container */
+  }
+
+  ::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .section {
+    scroll-snap-align: start; /* Snap at the start of each section */
+    height: 85vh; /* Each section takes full viewport height */
+  }

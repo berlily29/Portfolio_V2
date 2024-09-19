@@ -1,0 +1,14 @@
+$active-bg-color: #5e3a32;
+$active-text-color: #ffffff;
+$text-color: #ffffff;
+
+
+.nav-link.active {
+    background-color: $active-bg-color;
+    color: $active-text-color;
+}
+
+.nav-link {
+    color: $text-color;
+    text-transform: uppercase;
+}
