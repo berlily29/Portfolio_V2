@@ -1,7 +1,7 @@
 #container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 85vh; /* Full viewport height for container */
+    height: 90vh; /* Full viewport height for container */
   }
 
   ::-webkit-scrollbar {
@@ -9,6 +9,5 @@
   }
   
   .section {
-    scroll-snap-align: start; /* Snap at the start of each section */
-    height: 85vh; /* Each section takes full viewport height */
+    scroll-snap-align: center; /* Snap at the start of each section */
   }

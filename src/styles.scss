@@ -3,6 +3,10 @@
 
 @import 'bootstrap/scss/bootstrap';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $active-bg-color: #5e3a32;
 $active-text-color: #ffffff;
 $text-color-1: #ffffff;
@@ -11,10 +15,6 @@ $btn-bg-color: #5e3a32;
 $btn-text-color: #ffffff;
 $btn-hover-bg-color: #c79451;
 $bg-color: #2c1f0f;
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 * {
     box-sizing: border-box;

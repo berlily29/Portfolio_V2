@@ -8,8 +8,17 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
-  },
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+      },
+      // {
+      //   path: 'components',
+      //   loadChildren: () => import('./components/components.module').then(m => m.ComponentsModule)
+      // }
+    ]
+  }
 
 ];
 
