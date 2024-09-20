@@ -1,0 +1,1 @@
+import{N as n,W as m,l as t,o as r}from"./chunk-IIEAM3RJ.js";var a=[],e=class o{static \u0275fac=function(i){return new(i||o)};static \u0275mod=r({type:o});static \u0275inj=t({imports:[m.forChild(a),m]})};var p=class o{static \u0275fac=function(i){return new(i||o)};static \u0275mod=r({type:o});static \u0275inj=t({imports:[n,e]})};export{p as a};
